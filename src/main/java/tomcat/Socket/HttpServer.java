@@ -25,10 +25,10 @@ public class HttpServer {
             Socket client = serverSocket.accept();
                 OutputStream os = client.getOutputStream();
                 InputStream inputStream = client.getInputStream();
-                Request request = new Request(inputStream);
+                BaseRequest request = new BaseRequest(inputStream);
                 request.parse();
 
-                Response response = new Response(os);
+                BaseResponse response = new BaseResponse(os);
                 response.setRequest(request);
                 response.sendStaticResource();
                 client.close();

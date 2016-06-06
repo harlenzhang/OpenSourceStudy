@@ -6,11 +6,11 @@ import java.io.InputStream;
 /**
  * Created by harlenzhang on 16/6/2.
  */
-public class Request {
+public class BaseRequest {
     private InputStream input;
     private String uri;
 
-    public Request(InputStream inputStream){
+    public BaseRequest(InputStream inputStream){
         this.input = inputStream;
     }
 

@@ -8,16 +8,16 @@ import java.io.OutputStream;
 /**
  * Created by harlenzhang on 16/6/2.
  */
-public class Response {
+public class BaseResponse {
     private static final int BUFFER_SIZE = 1024;
-    Request request;
+    BaseRequest request;
     OutputStream outputStream;
 
-    public Request getRequest() {
+    public BaseRequest getRequest() {
         return request;
     }
 
-    public void setRequest(Request request) {
+    public void setRequest(BaseRequest request) {
         this.request = request;
     }
 
@@ -29,7 +29,7 @@ public class Response {
         this.outputStream = outputStream;
     }
 
-    public Response(OutputStream outputStream){
+    public BaseResponse(OutputStream outputStream){
         this.outputStream = outputStream;
     }
 
