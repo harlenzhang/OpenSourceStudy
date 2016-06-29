@@ -10,13 +10,13 @@ import java.net.URLStreamHandler;
  */
 public class ServletProcessor {
 
-    public void process(Request request, Response response){
+    public void process(Request request, Response response){/*
         String uri = request.getUri();
         String servletName = uri.substring(uri.lastIndexOf("/") + 1);
         URLClassLoader loader;
 
         URL[] urls = new URL[];
-        URLStreamHandler streamHandler;
+        URLStreamHandler streamHandler;*/
 
     }
 }
