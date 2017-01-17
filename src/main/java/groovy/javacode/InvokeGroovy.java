@@ -1,3 +1,4 @@
+/*
 package groovy.javacode;
 
 import groovy.lang.GroovyClassLoader;
@@ -13,9 +14,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
+*/
 /**
  * Created by harlenzhang on 16/8/12.
- */
+ *//*
+
 public class InvokeGroovy {
     public static void main(String[] args) {
         ClassLoader loader = new InvokeGroovy().getClass().getClassLoader();
@@ -37,14 +40,17 @@ public class InvokeGroovy {
             System.out.println(result.getAge());
             int val = (Integer)engine.get("val");
             System.out.println(val);
-            /*groovyClass = groovyClassLoader.parseClass(file);
+            */
+/*groovyClass = groovyClassLoader.parseClass(file);
             IFoo foo = (IFoo)groovyClass.newInstance();
             System.out.println(foo.run(new Integer(2), "more parameter"));
             System.out.println("--------------------------------------");
             GroovyObject groovyObject = (GroovyObject)groovyClass.newInstance();
-            System.out.println(groovyObject.invokeMethod("run", new Object[]{new Integer(2),"More parameter..."}));*/
+            System.out.println(groovyObject.invokeMethod("run", new Object[]{new Integer(2),"More parameter..."}));*//*
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+*/

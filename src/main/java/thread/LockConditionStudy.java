@@ -1,7 +1,5 @@
 package thread;
 
-import org.codehaus.groovy.runtime.powerassert.SourceText;
-
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 

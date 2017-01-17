@@ -39,10 +39,11 @@
             <artifactId>spring-context</artifactId>
             <version>4.0.5.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/asm/asm -->
         <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy</artifactId>
-            <version>1.8.3</version>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>3.3</version>
         </dependency>
         <dependency>
             <groupId>com.baidu.disconf</groupId>
