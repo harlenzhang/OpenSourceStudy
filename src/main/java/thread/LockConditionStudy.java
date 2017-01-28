@@ -16,6 +16,7 @@ public class LockConditionStudy {
                 try {
                 reentrantLock.lock();
                 System.out.println("我要等人" + this);
+                    Thread.currentThread().sleep(1000);
                     condition.await();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -30,14 +31,21 @@ public class LockConditionStudy {
         Thread thread1 = new Thread(new Runnable() {
             public void run() {
             reentrantLock.lock();
+
                 System.out.println("我拿到锁了");
                 try {
-                    Thread.currentThread().sleep(3000);
+                    Thread.currentThread().sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 condition.signalAll();
                 System.out.println("我说我到了");
+                try {
+                    Thread.currentThread().sleep(10000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 reentrantLock.unlock();
             }
         });

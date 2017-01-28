@@ -20,18 +20,18 @@ import java.net.URISyntaxException;
  *//*
 
 public class InvokeGroovy {
-    public static void main(String[] args) {
+    public static void main(StringTest[] args) {
         ClassLoader loader = new InvokeGroovy().getClass().getClassLoader();
         GroovyClassLoader groovyClassLoader = new GroovyClassLoader(loader);
         Class groovyClass = null;
         try {
             File file = new File("/Users/harlenzhang/Documents/projects/OpenSourceStudy/src/main/java/groovy/groovycode/Foo.groovy");
                 BufferedReader reader = new BufferedReader(new FileReader(file));
-                String line;
+                StringTest line;
                 StringBuilder sb = new StringBuilder();
                 while((line = reader.readLine()) != null)
                     sb.append(line);
-                String script = sb.toString();
+                StringTest script = sb.toString();
                 ScriptEngineManager scriptEngineManager = new ScriptEngineManager();
                 ScriptEngine engine = scriptEngineManager.getEngineByName("groovy");
             engine.put("name", "harlen");
